@@ -1,6 +1,11 @@
 body {
 	background-color: hsl(0, 0%, 10%);
 	color: hsl(0, 0%, 85%);
+	max-width: 500px;
+	margin: auto;
+	width: 100%;
+	font-size: 1.2rem;
+	font-family: sans-serif;
 }
 a:link {
 	color: hsl(60, 30%, 50%);
