@@ -1,34 +1,34 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-	<title>Филипп Барановский, инженер по доступности, a11y сопровождение</title>
-	<link rel="stylesheet" href="index.css">
-	<link
-		rel="alternate"
-		type="application/rss+xml"
-		title="Подкаст про фронтенд"
-		href="https://anchor.fm/s/13b79540/podcast/rss"
-	>
-</head>
-<body>
-	<h1>
-		Филипп Барановский
-	</h1>
+---
+layout: default
+title: Филипп Барановский, инженер по доступности, a11y сопровождение
+---
+
+<section id="introhead">
+	<h1>Филипп Барановский</h1>
 	<p role="navigation">
 		Accessibility engineer
 		<a href="/#" aria-label="Резюме, Филипп Барановский">CV</a>,
 		записываю <a href="#podcast">frontend подкаст</a>, 
 		перевожу <a href="#articles">статьи про доступность и фронтенд разработку</a>;
 	</p>
+</section>
 
+<section>
 	<h2 id="podcast">Выпуски подкаста</h2>
 	<ol reversed>
 		<li><a href="#">Undefined Talk: Remote, изоляция, этика общения в офисе, женщины в IT, стеклянный потолок, феминитивы</a></li>
-		<li><a href="#">5. CSS-разработчики, почему они нужны миру?</a></li>
-		<li><a href="#">4. 7 привычек хорошего программиста</a></li>
+		{% for post in site.posts %}
+			<li>
+				<a href="{{ post.url }}">
+					{{ post.title }}
+				</a>
+			</li>
+		{% endfor %}
 		<li>… <a href="#">смотреть все выпуски</a></li>
 	</ol>
+</section>
 
+<section>
 	<h2 id="articles">Статьи и переводы</h2>
 	<ol>
 		<li><a href="#">Undefined Talk: Remote, изоляция, этика общения в офисе, женщины в IT, стеклянный потолок, феминитивы</a></li>
@@ -36,8 +36,4 @@
 		<li><a href="#">4. 7 привычек хорошего программиста</a></li>
 		<li>… <a href="#">смотреть все выпуски</a></li>
 	</ol>
-
-	<footer>Updated: April'2020</footer>
-
-</body>
-</html>
+</section>
