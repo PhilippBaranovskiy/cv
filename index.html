@@ -3,37 +3,39 @@ layout: default
 title: Филипп Барановский, инженер по доступности, a11y сопровождение
 ---
 
-<section id="introhead">
+<div class="introhead">
 	<h1>Филипп Барановский</h1>
 	<p role="navigation">
-		Accessibility engineer
-		<a href="/#" aria-label="Резюме, Филипп Барановский">CV</a>,
+		Accessibility engineer,
+		<!-- <a href="/iam/" aria-label="Резюме, Филипп Барановский">CV</a>, -->
 		записываю <a href="#podcast">frontend подкаст</a>, 
 		перевожу <a href="#articles">статьи про доступность и фронтенд разработку</a>;
 	</p>
-</section>
+</div>
 
-<section>
-	<h2 id="podcast">Выпуски подкаста</h2>
-	<ol reversed>
-		<li><a href="#">Undefined Talk: Remote, изоляция, этика общения в офисе, женщины в IT, стеклянный потолок, феминитивы</a></li>
-		{% for post in site.posts %}
-			<li>
-				<a href="{{ post.url }}">
-					{{ post.title }}
-				</a>
-			</li>
-		{% endfor %}
-		<li>… <a href="#">смотреть все выпуски</a></li>
-	</ol>
-</section>
+<div class="twoColumn">
+	<div class="oneColumn">
+		<h2 id="podcast">Выпуски подкаста</h2>
+		<ol reversed>
+			<li><a href="#">Undefined Talk: Remote, изоляция, этика общения в офисе, женщины в IT, стеклянный потолок, феминитивы</a></li>
+			{% for post in site.posts %}
+				<li>
+					<a href="{{ post.url }}">
+						{{ post.title }}
+					</a>
+				</li>
+			{% endfor %}
+			<li>… <a href="#">смотреть все выпуски</a></li>
+		</ol>
+	</div>
 
-<section>
-	<h2 id="articles">Статьи и переводы</h2>
-	<ol>
-		<li><a href="#">Undefined Talk: Remote, изоляция, этика общения в офисе, женщины в IT, стеклянный потолок, феминитивы</a></li>
-		<li><a href="#">5. CSS-разработчики, почему они нужны миру?</a></li>
-		<li><a href="#">4. 7 привычек хорошего программиста</a></li>
-		<li>… <a href="#">смотреть все выпуски</a></li>
-	</ol>
-</section>
+	<div class="oneColumn">
+		<h2 id="articles">Статьи и переводы</h2>
+		<ol>
+			<li><a href="#">Undefined Talk: Remote, изоляция, этика общения в офисе, женщины в IT, стеклянный потолок, феминитивы</a></li>
+			<li><a href="#">5. CSS-разработчики, почему они нужны миру?</a></li>
+			<li><a href="#">4. 7 привычек хорошего программиста</a></li>
+			<li>… <a href="#">смотреть все выпуски</a></li>
+		</ol>
+	</div>
+</div>

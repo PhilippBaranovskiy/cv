@@ -1,11 +1,21 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="summary">
-	{{ page.category }}
+<div class="introhead">
+	<h1>{{ page.title }}</h1>
 	<span class="date">
 		{{ page.date | date: '%B %d, %Y' }}
 	</span>
-</p>
+</div>
 <p>{{ content }}</p>
+
+
+<div class="introhead">
+	<h2>Филипп Барановский</h2>
+	<p role="navigation">
+		Accessibility engineer,
+		<!-- <a href="/iam/" aria-label="Резюме, Филипп Барановский">CV</a>, -->
+		записываю <a href="#podcast">frontend подкаст</a>, 
+		перевожу <a href="#articles">статьи про доступность и фронтенд разработку</a>;
+	</p>
+</div>
